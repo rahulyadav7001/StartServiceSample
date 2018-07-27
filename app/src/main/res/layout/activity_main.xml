@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:text="test"
+        android:layout_margin="10dp"
+        android:id="@+id/tv_fatchData"/>
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/tv_fatchData"
+        android:id="@+id/btn_Startservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Start Service!"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_stopService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Stop Service"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_Startservice" />
+
+    <Button
+        android:id="@+id/btn_bindService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Bind Service"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_stopService" />
+
+    <Button
+        android:id="@+id/btn_unBindService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="UnBind Service"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_bindService" />
+
+    <Button
+        android:id="@+id/btn_getData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Fatch Data"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_unBindService" />
+</android.support.constraint.ConstraintLayout>
